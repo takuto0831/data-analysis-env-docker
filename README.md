@@ -6,30 +6,15 @@ I create environmentfor machine learning (xgboost, lingtgb) with docker.
 
 - connect to AWS, Mysql, kubernetes
 
-## Problem
-
-- ../bin/bash commandを ymlに含めるとかできないのか?
-- image名の設定
-- docker hub に push/pullして使用する方法
-
 ## how to activate python environment
 
-- execute sample (build and execute python script)
+1. build images or restart container
+2. excecute container and show console of docker
+3. execute python script
 
 ```
 // terminal
-docker-compose up --build  
-docker exec -it [container id || container name] ../bin/bash
-
-// container
-python script/test.py
-```
-
-- execute (restart container and execute python script)
-
-```
-// terminal
-docker start -a [container id || container name]
+docker-compose up --build or docker start -a [container id || container name]
 docker exec -it [container id || container name] ../bin/bash
 
 // container
