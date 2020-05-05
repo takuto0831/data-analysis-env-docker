@@ -1,6 +1,6 @@
 # python-ml-env-docker
 
-I create environmentfor machine learning (xgboost, lightgbm) with docker. 
+I create environment for machine learning (xgboost, lightgbm) with docker. 
 
 ## Feature Perspective
 
