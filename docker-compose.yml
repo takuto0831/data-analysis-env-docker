@@ -1,0 +1,8 @@
+version: "3"
+services:
+  python-env:
+    build: .
+    volumes:
+      - $PWD:/tmp
+    working_dir: /tmp
+    tty: true
