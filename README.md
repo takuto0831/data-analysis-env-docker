@@ -4,7 +4,7 @@ I create environmentfor machine learning (xgboost, lingtgb) with docker.
 
 ## Feature Perspective
 
-- connect to AWS, Mysql, kubernetes??
+- connect to AWS, Mysql, kubernetes
 
 ## Problem
 
