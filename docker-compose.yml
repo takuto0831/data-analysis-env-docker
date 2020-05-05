@@ -1,8 +1,10 @@
 version: "3"
 services:
   python-env:
+    container_name: python-env
     build: .
     volumes:
       - $PWD:/tmp
     working_dir: /tmp
+    command: ../bin/bash
     tty: true
