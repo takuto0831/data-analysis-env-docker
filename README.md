@@ -2,6 +2,10 @@
 
 I create environmentfor machine learning (xgboost, lingtgb) with docker. 
 
+## Feature Perspective
+
+- connect to AWS, Mysql, kubernetes??
+
 ## Problem
 
 - ../bin/bash commandを ymlに含めるとかできないのか?
