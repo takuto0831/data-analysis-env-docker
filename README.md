@@ -5,6 +5,8 @@ I create environmentfor machine learning (xgboost, lingtgb) with docker.
 ## Problem
 
 - ../bin/bash commandを ymlに含めるとかできないのか?
+- image名の設定
+- docker hub に push/pullして使用する方法
 
 ## how to activate python environment
 
