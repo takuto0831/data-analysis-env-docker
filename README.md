@@ -2,6 +2,9 @@
 
 I create environmentfor machine learning (xgboost, lingtgb) with docker. 
 
+## Problem
+
+- ../bin/bash commandを ymlに含めるとかできないのか?
 
 ## how to activate python environment
 
@@ -10,7 +13,7 @@ I create environmentfor machine learning (xgboost, lingtgb) with docker.
 ```
 // terminal
 docker-compose up --build  
-docker exec -it [container id] ../bin/bash
+docker exec -it [container id || container name] ../bin/bash
 
 // container
 python script/test.py
@@ -20,8 +23,8 @@ python script/test.py
 
 ```
 // terminal
-docker start -a [container id]
-docker exec -it [container id] ../bin/bash
+docker start -a [container id || container name]
+docker exec -it [container id || container name] ../bin/bash
 
 // container
 python script/test.py
