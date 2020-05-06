@@ -14,7 +14,8 @@ I create environment for machine learning (xgboost, lightgbm) with docker.
 
 ```
 // terminal
-docker-compose up --build or docker start -a [container id || container name]
+docker-compose up --build 
+docker start -a [container id || container name] // contatiner already created
 docker exec -it [container id || container name] bash
 
 // container
@@ -31,7 +32,7 @@ docker stop [container id || container name]
 ```
 docker build -t hogehoge:latest . // set image name
 docker run --name hoge -it hogehoge:latest // set container name
-docker run -v #{host directory}:#{container directory} -it hogehoge:image // use local file
+docker run -v #{host directory}:#{container directory} -it hogehoge:latest // use local file
 ```
 
 - remove containers or images
@@ -40,11 +41,15 @@ docker run -v #{host directory}:#{container directory} -it hogehoge:image // use
 // remove stopped container, not tags images, not uses volume and networks
 docker system prune
 
-// remove stopped container
-docker container prune
+// remove stopped containers
+docker container prune 
 
-// remove stopped image
+// remove stopped images
 docker image prune
+
+// remove the container or image
+docker rm [container id]
+docker rmi [image id]
 ```
 
 ## Referrence
