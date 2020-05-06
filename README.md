@@ -26,6 +26,12 @@ docker stop [container id || container name]
 
 ## Useful docker command 
 
+- build, run
+
+```
+docker build -t redis:latest . // set image name
+docker run --name redis-server -it redis:latest // set container name
+```
 - remove containers or images
 
 ```
