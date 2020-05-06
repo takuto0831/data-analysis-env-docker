@@ -15,7 +15,7 @@ I create environment for machine learning (xgboost, lightgbm) with docker.
 ```
 // terminal
 docker-compose up --build or docker start -a [container id || container name]
-docker exec -it [container id || container name] ../bin/bash
+docker exec -it [container id || container name] bash
 
 // container
 python script/test.py
