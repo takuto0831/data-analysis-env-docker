@@ -30,9 +30,15 @@ docker stop [container id || container name]
 - build, run options
 
 ```
-docker build -t hogehoge:latest . // set image name
+docker build -t #{docker id}/#{project name}:#{version} . // set image name
 docker run --name hoge -it hogehoge:latest // set container name
 docker run -v #{host directory}:#{container directory} -it hogehoge:latest // use local file
+```
+
+- commit (create image from container)
+
+```
+docker commit -c #{new order} [container] #{docker id}/#{project name}:#{version}
 ```
 
 - remove containers or images
