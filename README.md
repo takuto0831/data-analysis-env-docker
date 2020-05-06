@@ -26,12 +26,14 @@ docker stop [container id || container name]
 
 ## Useful docker command 
 
-- build, run
+- build, run options
 
 ```
-docker build -t redis:latest . // set image name
-docker run --name redis-server -it redis:latest // set container name
+docker build -t hogehoge:latest . // set image name
+docker run --name hoge -it hogehoge:latest // set container name
+docker run -v #{host directory}:#{container directory} -it hogehoge:image // use local file
 ```
+
 - remove containers or images
 
 ```
@@ -47,6 +49,7 @@ docker image prune
 
 ## Referrence
 
-- [Dockerでデータ分析環境を手軽に作る方法](https://amalog.hateblo.jp/entry/data-analysis-docker)
+- [Dockerでデータ分析環境を手軽に作る方法](https://amalog.hateblo.jp/entry/data-analysis-docker
+- [docker run options](https://qiita.com/shimo_yama/items/d0c42394689132fcb4b6)
 - [Docker and kubernetes: The complete Guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11436676?start=45#overview)
 
