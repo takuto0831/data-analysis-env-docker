@@ -24,6 +24,21 @@ python script/test.py
 docker stop [container id || container name] 
 ```
 
+## Useful docker command 
+
+- remove containers or images
+
+```
+// remove stopped container, not tags images, not uses volume and networks
+docker system prune
+
+// remove stopped container
+docker container prune
+
+// remove stopped image
+docker image prune
+```
+
 ## Referrence
 
 - [Dockerでデータ分析環境を手軽に作る方法](https://amalog.hateblo.jp/entry/data-analysis-docker)
