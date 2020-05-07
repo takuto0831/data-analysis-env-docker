@@ -24,8 +24,28 @@ python script/test.py
 // terminal
 docker stop [container id || container name] 
 ```
+## how to activate mysql database
 
-## Useful docker command 
+1. build images
+2. open command prompt
+3. open mysql and sql command
+4. reset db and remove container (better not to do?)
+
+```
+// terminal
+docker-compose up --build
+docker exec -it mysql-host bash
+
+// mysql (container)
+mysql -u [MYSQL_ROOT_PASSWORD] -p
+show database;
+use [table name];
+
+//  terminal (reset db and remove container)
+docker-compose down
+```
+
+## useful docker command 
 
 - build, run options
 
@@ -56,6 +76,21 @@ docker image prune
 // remove the container or image
 docker rm [container id]
 docker rmi [image id]
+```
+
+## Directory 
+
+```
+├── Dockerfile
+├── README.md
+├── docker-compose.yml
+├── mysql
+│   ├── Dockerfile
+│   ├── db
+│   │   └── init.sql
+│   └── my.cnf
+└── script
+    └── test.py
 ```
 
 ## Referrence
