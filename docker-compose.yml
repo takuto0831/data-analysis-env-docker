@@ -1,10 +1,26 @@
 version: "3"
 services:
-  python-env:
+  python:
+    image: python-env
     container_name: python-env
     build: .
     volumes:
       - $PWD:/tmp
     working_dir: /tmp
-    command: ../bin/bash
     tty: true
+
+  db:
+    image: mysql-host
+    container_name: mysql-host
+    build: ./mysql/
+    volumes:
+    - ./mysql/db:/docker-entrypoint-initdb.d
+    environment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: test_database
+       MYSQL_USER: docker
+       MYSQL_PASSWORD: docker
+       TZ: 'Asia/Tokyo'
+    ports:
+    - 3306:3306
+      
