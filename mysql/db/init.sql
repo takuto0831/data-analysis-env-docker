@@ -1,0 +1,4 @@
+-- setting
+DROP DATABASE IF EXISTS sample_db;
+
+CREATE DATABASE IF NOT EXISTS sample_db;
