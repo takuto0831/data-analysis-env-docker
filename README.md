@@ -95,12 +95,16 @@ docker rmi [image id]
 
 ## Referrence
 
-- [Dockerでデータ分析環境を手軽に作る方法](https://amalog.hateblo.jp/entry/data-analysis-docker)
-- [docker run options](https://qiita.com/shimo_yama/items/d0c42394689132fcb4b6)
-- [Docker and kubernetes: The complete Guide (Udemy)](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11436676?start=45#overview)
+- Udemy:
+    - [ ] [Docker and kubernetes: The complete Guide (Udemy)](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11436676?start=45#overview)
 
+- Docker:
+    - [ ] [Dockerでデータ分析環境を手軽に作る方法](https://amalog.hateblo.jp/entry/data-analysis-docker)
+    - [x] [docker run options](https://qiita.com/shimo_yama/items/d0c42394689132fcb4b6)
+    - [ ] [効率的に安全なDocker fileを作成する](https://qiita.com/pottava/items/452bf80e334bc1fee69a)
 - Kubernetes:
     
-    - [数時間で完全理解 ハンズオン](https://qiita.com/Kta-M/items/ce475c0063d3d3f36d5d)
-    - [Kubernetesを用いてGoogle Container Engineでコンテナクラスタをデプロイ](https://qiita.com/yusukixs/items/11601607c629295d31a7)
+    - [ ] [Kubernetestとは何か](https://www.sbbit.jp/article/cont1/35564#head1)
+    - [ ] [数時間で完全理解 ハンズオン](https://qiita.com/Kta-M/items/ce475c0063d3d3f36d5d)
+    - [ ] [Kubernetesを用いてGoogle Container Engineでコンテナクラスタをデプロイ](https://qiita.com/yusukixs/items/11601607c629295d31a7)
 
