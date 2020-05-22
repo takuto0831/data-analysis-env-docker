@@ -1,3 +1,4 @@
+
 # python-ml-env-docker
 
 I create environment for machine learning (xgboost, lightgbm) with docker. 
@@ -76,6 +77,43 @@ docker image prune
 // remove the container or image
 docker rm [container id]
 docker rmi [image id]
+```
+
+## useful git command
+
+- remove local changes
+
+```
+git checkout .
+```
+
+- remove all file (back to commit)
+
+```
+git clean -df .
+```
+
+- reset command
+
+git add: working tree -> index
+git commit: index -> local repository
+git push: local repository -> remote repository
+
+```
+// reset latest commit
+git reset --soft HEAD^
+
+// reset latest commit, add, working tree
+git reset --hard HEAD^
+
+// reset all commit changes
+git reset --hard HEAD
+
+// reset all add changes
+git reset --mixed HEAD
+
+// remove reset
+git reset --hard ORIG_HEAD
 ```
 
 ## Directory 
