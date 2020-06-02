@@ -21,26 +21,6 @@ python script/test.py
 // terminal
 docker stop [container id || container name] 
 ```
-## how to activate mysql database
-
-1. build images
-2. open command prompt
-3. open mysql and sql command
-4. reset db and remove container (better not to do?)
-
-```
-// terminal
-docker-compose up --build
-docker exec -it mysql-host bash
-
-// mysql (container)
-mysql -u [MYSQL_ROOT_PASSWORD] -p
-show database;
-use [table name];
-
-//  terminal (reset db and remove container)
-docker-compose down
-```
 
 ## useful docker command 
 
@@ -112,7 +92,12 @@ git reset --mixed HEAD
 git reset --hard ORIG_HEAD
 ```
 
-## Directory 
+# Feature Perspective
+
+- connect to AWS, Mysql, kubernetes
+- running lightgbm on docker and aws
+
+# Directory 
 
 ```
 ├── Dockerfile
@@ -127,10 +112,28 @@ git reset --hard ORIG_HEAD
     └── test.py
 ```
 
-# Feature Perspective
+# Option Technics
 
-- connect to AWS, Mysql, kubernetes !
-- running lightgbm on docker and aws !
+## how to activate mysql database
+
+1. build images
+2. open command prompt
+3. open mysql and sql command
+4. reset db and remove container (better not to do?)
+
+```
+// terminal
+docker-compose up --build
+docker exec -it mysql-host bash
+
+// mysql (container)
+mysql -u [MYSQL_ROOT_PASSWORD] -p
+show database;
+use [table name];
+
+//  terminal (reset db and remove container)
+docker-compose down
+```
 
 # Referrence
 
