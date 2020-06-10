@@ -30,6 +30,7 @@ docker stop [container id || container name]
 docker build -t #{docker id}/#{project name}:#{version} . // set image name
 docker run --name hoge -it hogehoge:latest // set container name
 docker run -v #{host directory}:#{container directory} -it hogehoge:latest // use local file
+docker run -d hoge // run images on background
 ```
 
 - commit (create image from container)
@@ -38,17 +39,20 @@ docker run -v #{host directory}:#{container directory} -it hogehoge:latest // us
 docker commit -c #{new order} [container] #{docker id}/#{project name}:#{version}
 ```
 
+- docker-compose
+
+```
+docker-compose up -d // launch in background
+docker-compose dows // stop all container
+docker-compose ps // use only directory as 'docker-compose.yml' file
+```
+
 - remove containers or images
 
 ```
-// remove stopped container, not tags images, not uses volume and networks
-docker system prune
-
-// remove stopped containers
-docker container prune 
-
-// remove stopped images
-docker image prune
+docker system prune // remove stopped container, not tags images, not uses volume and networks
+docker container prune // remove stopped containers
+docker image prune // remove stopped images
 
 // remove the container or image
 docker rm [container id]
