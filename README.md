@@ -13,7 +13,7 @@ I create environment for machine learning (xgboost, lightgbm) with docker.
 // terminal
 docker-compose up --build 
 docker start -a [container id || container name] // contatiner already created
-docker exec -it [container id || container name] bash
+docker exec -it [container id || container name] bash // '-it': need intractive process like a shell
 
 // container
 python script/test.py
